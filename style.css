@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'calculator-font';
+    src: url(digital-7/transfonter.org-20211107-143355/Digital-7.woff),
+        url(digital-7/digital-7.ttf);
+}  
+  
+
 body {
     display: flex;
     justify-content: center;
@@ -8,8 +15,9 @@ body {
     display: flex;
     flex-direction: column;
     background-color: gray;
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
+    border: 6px outset gray;
 }
 
 .row {
@@ -19,7 +27,7 @@ body {
 .pad {
     height: 100px;
     width: 100px;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .top-row {
@@ -28,17 +36,36 @@ body {
 
 .top {
     height: 100px;
-    width: 200px;
-    font-size: 30px;
+    width: 204px;
+    font-size: 40px;
 }
 
 .display {
-    height: 150px;
-    width: 400px;
-    background-color: gainsboro;
-    
+    display: flex;
+    height: 120px;
+    width: 394px;
+    background-color: rgb(231, 231, 231);
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 4px inset rgb(231, 231, 231);
+    font-family: 'calculator-font';
+    font-size: 116px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10px;
 }
 
 button {
-    background-color: gainsboro;
+    background-color: rgb(196, 195, 195);
+    margin: 2px;
+}
+
+.clear {
+    background-color: rgb(219, 179, 179);
+    border-color: rgb(219, 179, 179);
+}
+
+.delete {
+    background-color: rgb(183, 180, 221);
+    border-color: rgb(183, 180, 221);
 }
